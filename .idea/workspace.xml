@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="37531909-7e18-4edf-bbc7-b4d679c843c9" name="Changes" comment="" />
+    <list default="true" id="37531909-7e18-4edf-bbc7-b4d679c843c9" name="Changes" comment="Начальный коммит">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/Camel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/Horse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/Humster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/PackAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Entities/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Presenter/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2a4PT6O73pmZL35AioFkkFfbvzU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,7 +51,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -31,6 +64,19 @@
       <option name="presentableId" value="Default" />
       <updated>1703574883032</updated>
     </task>
+    <task id="LOCAL-00001" summary="Начальный коммит">
+      <option name="closed" value="true" />
+      <created>1703575209115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703575209115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Начальный коммит" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начальный коммит" />
   </component>
 </project>
