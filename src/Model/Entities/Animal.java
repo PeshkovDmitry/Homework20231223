@@ -43,6 +43,13 @@ public abstract class Animal {
     }
 
     @Override
+    public String toString() {
+        return "Животное " + name
+                + ", дата рождения " + birthday
+                + ", знает команды " + commands;
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(getName(), getBirthday(), getCommands());
     }
