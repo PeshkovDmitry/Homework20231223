@@ -12,9 +12,7 @@ public class Dog extends Pet {
 
     @Override
     public String toString() {
-        return "Собака " + name
-                + ", дата рождения " + birthday
-                + ", знает команды " + commands;
+        return "Собака " + super.toString();
     }
 
     @Override

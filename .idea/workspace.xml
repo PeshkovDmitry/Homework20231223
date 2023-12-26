@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37531909-7e18-4edf-bbc7-b4d679c843c9" name="Changes" comment="Начал прорабатывать реализацию View и Presenter">
-      <change afterPath="$PROJECT_DIR$/src/Animals.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Presenter/AnimalTypeParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Presenter/BirthdayParser.java" afterDir="false" />
+    <list default="true" id="37531909-7e18-4edf-bbc7-b4d679c843c9" name="Changes" comment="Добавлено считывание исходных данных из файла">
+      <change afterPath="$PROJECT_DIR$/src/Model/AnimalFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Camel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Donkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Humster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Humster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/RegistryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/RegistryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presenter/AnimalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/AnimalType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Presenter/RegistryPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/RegistryPresenter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +53,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Model.Entities" />
     </key>
@@ -86,13 +93,22 @@
       <option name="project" value="LOCAL" />
       <updated>1703583956182</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлено считывание исходных данных из файла">
+      <option name="closed" value="true" />
+      <created>1703588911980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703588911980</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Начальный коммит" />
     <MESSAGE value="Создал иерархию классов животных" />
     <MESSAGE value="Начал прорабатывать реализацию View и Presenter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начал прорабатывать реализацию View и Presenter" />
+    <MESSAGE value="Добавлено считывание исходных данных из файла" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено считывание исходных данных из файла" />
   </component>
 </project>

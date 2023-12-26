@@ -12,9 +12,7 @@ public class Camel extends PackAnimal {
 
     @Override
     public String toString() {
-        return "Верблюд " + name
-                + ", дата рождения " + birthday
-                + ", знает команды " + commands;
+        return "Верблюд " + super.toString();
     }
 
     @Override

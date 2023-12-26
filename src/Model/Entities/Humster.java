@@ -12,9 +12,7 @@ public class Humster extends Pet {
 
     @Override
     public String toString() {
-        return "Хомяк " + name
-                + ", дата рождения " + birthday
-                + ", знает команды " + commands;
+        return "Хомяк " + super.toString();
     }
 
     @Override

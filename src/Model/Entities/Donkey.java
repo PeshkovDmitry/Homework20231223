@@ -12,9 +12,7 @@ public class Donkey extends PackAnimal {
 
     @Override
     public String toString() {
-        return "Осёл " + name
-                + ", дата рождения " + birthday
-                + ", знает команды " + commands;
+        return "Осёл " + super.toString();
     }
 
     @Override

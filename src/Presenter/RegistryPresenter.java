@@ -3,6 +3,7 @@ package Presenter;
 import Model.Entities.Animal;
 import Model.Model;
 import View.View;
+import Model.AnimalFactory;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -38,7 +39,8 @@ public class RegistryPresenter implements Presenter {
                     String name = view.get(Messages.GET_NAME);
                     Date bithday = BirthdayParser.parse(view.get(Messages.GET_BIRTHDAY));
                     List<String> commands = Arrays.asList(view.get(Messages.GET_COMMANDS).split(","));
-
+                    Animal animal = AnimalFactory.get(type, name, bithday, commands);
+                    System.out.println(animal);
                     break;
                 case "3":
                     break;

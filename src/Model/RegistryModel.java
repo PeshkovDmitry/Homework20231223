@@ -29,32 +29,12 @@ public class RegistryModel implements Model {
             String str = "";
             while ((str = bufferedReader.readLine()) != null) {
                 String[] data = str.split(";");
-                String name = data[0];
-                AnimalType type = AnimalType.valueOf(data[1]);
-                Date bithday = BirthdayParser.parse(data[2]);
-                List<String> commands = Arrays.asList(data[3].split(","));
-                Animal animal = null;
-                switch (type) {
-                    case CAT:
-                        animal = new Cat(name, bithday, commands);
-                        break;
-                    case DOG:
-                        animal = new Dog(name, bithday, commands);
-                        break;
-                    case HUMSTER:
-                        animal = new Humster(name, bithday, commands);
-                        break;
-                    case HORSE:
-                        animal = new Horse(name, bithday, commands);
-                        break;
-                    case CAMEL:
-                        animal = new Camel(name, bithday, commands);
-                        break;
-                    case DONKEY:
-                        animal = new Donkey(name, bithday, commands);
-                        break;
-                }
-                list.add(animal);
+                list.add(AnimalFactory.get(
+                        AnimalType.valueOf(data[1]),
+                        data[0],
+                        BirthdayParser.parse(data[2]),
+                        Arrays.asList(data[3].split(","))
+                ));
             }
         }
         catch (IOException e) {

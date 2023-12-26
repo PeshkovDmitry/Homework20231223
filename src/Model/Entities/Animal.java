@@ -1,5 +1,6 @@
 package Model.Entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -44,8 +45,8 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "Животное " + name
-                + ", дата рождения " + birthday
+        return name
+                + ", дата рождения " + new SimpleDateFormat("yyyy-MM-dd").format(birthday)
                 + ", знает команды " + commands;
     }
 

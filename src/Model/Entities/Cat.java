@@ -1,5 +1,6 @@
 package Model.Entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -12,9 +13,7 @@ public class Cat extends Pet {
 
     @Override
     public String toString() {
-        return "Кот " + name
-                + ", дата рождения " + birthday
-                + ", знает команды " + commands;
+        return "Кот " + super.toString();
     }
 
     @Override

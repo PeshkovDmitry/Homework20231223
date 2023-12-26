@@ -12,9 +12,7 @@ public class Horse extends PackAnimal {
 
     @Override
     public String toString() {
-        return "Лошадь " + name
-                + ", дата рождения " + birthday
-                + ", знает команды " + commands;
+        return "Лошадь " + super.toString();
     }
 
     @Override
