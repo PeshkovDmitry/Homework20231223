@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public enum AnimalType {
     CAT ("Кот"),
     DOG ("Собака"),
-    HUMSTER ("Хомяк"),
+    HAMSTER("Хомяк"),
     HORSE ("Лошадь"),
     CAMEL ("Верблюд"),
     DONKEY ("Осёл");

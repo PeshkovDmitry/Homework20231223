@@ -1,38 +1,40 @@
 package Model;
 
-import Model.Entities.*;
-import Presenter.AnimalType;
-import Presenter.BirthdayParser;
+import Exceptions.BirthdayParseException;
+import Exceptions.DatabaseException;
+import Model.Entities.Animal;
+import Model.Repositories.FileRepository;
+import Model.Repositories.Repository;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 
 public class RegistryModel implements Model {
 
-
+    private Repository repo = new FileRepository();
 
     @Override
-    public void add(Animal animal) {
-
+    public void add(Animal animal) throws DatabaseException, BirthdayParseException {
+        if (repo.readByName(animal.getName()) == null) {
+            repo.create(animal);
+        } else {
+            repo.update(animal);
+        }
     }
 
     @Override
-    public List<Animal> getAll() {
-
+    public List<Animal> getAll() throws DatabaseException, BirthdayParseException {
+        return repo.readAll();
     }
 
     @Override
-    public List<Animal> getByName(String name) {
-        return null;
+    public Animal getByName(String name) throws DatabaseException, BirthdayParseException {
+        return repo.readByName(name);
     }
 
     @Override
     public void addCommand(String command, Animal animal) {
-
+        List<String> commands = animal.getCommands();
+        commands.add(command);
+        animal.setCommands(commands);
     }
 }

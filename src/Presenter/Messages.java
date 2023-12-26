@@ -22,4 +22,5 @@ public interface Messages {
     public static String GET_COMMANDS = "Введите команды через запятую -> ";
 
     public static String GET_TYPE = "Укажите вид животного:";
+
  }

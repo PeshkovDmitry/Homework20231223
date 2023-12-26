@@ -17,7 +17,7 @@ public class AnimalFactory {
             case DOG:
                 animal = new Dog(name, birthday, commands);
                 break;
-            case HUMSTER:
+            case HAMSTER:
                 animal = new Humster(name, birthday, commands);
                 break;
             case HORSE:

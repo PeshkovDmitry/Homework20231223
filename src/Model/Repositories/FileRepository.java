@@ -1,6 +1,7 @@
 package Model.Repositories;
 
-import Exceptions.DatabaseFileErrorException;
+import Exceptions.BirthdayParseException;
+import Exceptions.DatabaseException;
 import Model.AnimalFactory;
 import Model.Entities.Animal;
 import Presenter.AnimalType;
@@ -17,12 +18,17 @@ import java.util.List;
 public class FileRepository implements Repository{
 
     @Override
-    public void create(Animal animal) {
-
+    public void create(Animal animal) throws DatabaseException {
+        try (FileWriter fileWriter = new FileWriter("Animals.csv", true)) {
+            fileWriter.write("\r\n" + animal.getCSV());
+            fileWriter.flush();
+        } catch (IOException e) {
+            throw new DatabaseException("Невозможно записать в файл данных", "Animals.csv");
+        }
     }
 
     @Override
-    public List<Animal> readAll() throws DatabaseFileErrorException {
+    public List<Animal> readAll() throws DatabaseException, BirthdayParseException {
         List<Animal> list = new ArrayList<>();
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader("Animals.csv"));
@@ -39,13 +45,13 @@ public class FileRepository implements Repository{
             bufferedReader.close();
         }
         catch (IOException e) {
-            throw new DatabaseFileErrorException("Невозможно прочитать файл данных", "Animals.csv");
+            throw new DatabaseException("Невозможно прочитать файл данных", "Animals.csv");
         }
         return list;
     }
 
     @Override
-    public Animal readByName(String name) throws DatabaseFileErrorException {
+    public Animal readByName(String name) throws DatabaseException, BirthdayParseException {
         for (Animal animal: readAll()) {
             if (animal.getName().equals(name)) {
                 return animal;
@@ -55,7 +61,7 @@ public class FileRepository implements Repository{
     }
 
     @Override
-    public void update(Animal animal) throws DatabaseFileErrorException {
+    public void update(Animal animal) throws DatabaseException, BirthdayParseException {
         List<Animal> list = readAll();
         try (FileWriter fileWriter = new FileWriter("Animals.csv")) {
             for (Animal a: list) {
@@ -67,12 +73,12 @@ public class FileRepository implements Repository{
             }
             fileWriter.flush();
         } catch (IOException e) {
-            throw new DatabaseFileErrorException("Невозможно записать в файл данных", "Animals.csv");
+            throw new DatabaseException("Невозможно записать в файл данных", "Animals.csv");
         }
     }
 
     @Override
-    public void delete(Animal animal) throws DatabaseFileErrorException {
+    public void delete(Animal animal) throws DatabaseException, BirthdayParseException {
         List<Animal> list = readAll();
         try (FileWriter fileWriter = new FileWriter("Animals.csv")) {
             for (Animal a: list) {
@@ -82,7 +88,7 @@ public class FileRepository implements Repository{
             }
             fileWriter.flush();
         } catch (IOException e) {
-            throw new DatabaseFileErrorException("Невозможно записать в файл данных", "Animals.csv");
+            throw new DatabaseException("Невозможно записать в файл данных", "Animals.csv");
         }
     }
 }

@@ -47,9 +47,9 @@ public abstract class Animal {
 
     public String getCSV() {
         return getName() + ";"
-                + this.getClass().getName().toLowerCase() + ";"
+                + this.getClass().getSimpleName().toLowerCase() + ";"
                 + new SimpleDateFormat("yyyy-MM-dd").format(birthday) + ";"
-                + getCommands() + ";";
+                + String.join(",",commands) + ";";
     }
 
     @Override

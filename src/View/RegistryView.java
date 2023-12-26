@@ -20,7 +20,7 @@ public class RegistryView implements View {
             Integer count = 0;
             for (String s:list) {
                 if (list.size() > 1) {
-                    System.out.print(++count + ") ");
+                    System.out.print(count++ + ") ");
                 }
                 System.out.println(s);
             }
@@ -30,6 +30,6 @@ public class RegistryView implements View {
     @Override
     public String get(String message) {
         System.out.print(message);
-        return scanner.next();
+        return scanner.nextLine();
     }
 }
