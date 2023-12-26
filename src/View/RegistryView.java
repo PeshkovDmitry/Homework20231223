@@ -30,6 +30,6 @@ public class RegistryView implements View {
     @Override
     public String get(String message) {
         System.out.print(message);
-        return scanner.nextLine();
+        return scanner.nextLine().trim();
     }
 }

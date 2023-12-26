@@ -35,12 +35,14 @@ public class FileRepository implements Repository{
             String str = "";
             while ((str = bufferedReader.readLine()) != null) {
                 String[] data = str.split(";");
-                list.add(AnimalFactory.get(
-                        AnimalType.valueOf(data[1].toUpperCase()),
-                        data[0],
-                        BirthdayParser.parse(data[2]),
-                        Arrays.asList(data[3].split(","))
-                ));
+                if (data.length == 4) {
+                    list.add(AnimalFactory.get(
+                            AnimalType.valueOf(data[1].toUpperCase()),
+                            data[0],
+                            BirthdayParser.parse(data[2]),
+                            Arrays.asList(data[3].split(","))
+                    ));
+                }
             }
             bufferedReader.close();
         }
@@ -66,9 +68,9 @@ public class FileRepository implements Repository{
         try (FileWriter fileWriter = new FileWriter("Animals.csv")) {
             for (Animal a: list) {
                 if (a.getName().equals(animal.getName())) {
-                    fileWriter.write(animal.getCSV());
+                    fileWriter.write("\r\n" + animal.getCSV());
                 } else {
-                    fileWriter.write(a.getCSV());
+                    fileWriter.write("\r\n" + a.getCSV());
                 }
             }
             fileWriter.flush();
@@ -83,7 +85,7 @@ public class FileRepository implements Repository{
         try (FileWriter fileWriter = new FileWriter("Animals.csv")) {
             for (Animal a: list) {
                 if (!a.equals(animal)) {
-                    fileWriter.write(animal.getCSV());
+                    fileWriter.write("\r\n" + animal.getCSV());
                 }
             }
             fileWriter.flush();

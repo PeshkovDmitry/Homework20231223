@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37531909-7e18-4edf-bbc7-b4d679c843c9" name="Changes" comment="Рефакторинг. Создан класс-репозиторий для хранения данных в файле">
-      <change afterPath="$PROJECT_DIR$/Animals (copy).csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/AnimalTypeParseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/BirthdayParseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/DatabaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/EmptyNameException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="37531909-7e18-4edf-bbc7-b4d679c843c9" name="Changes" comment="Частично проработана обработка исключительных ситуаций">
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/CommandsSizeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals (copy).csv" beforeDir="false" afterPath="$PROJECT_DIR$/Animals (copy).csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Animals.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Animals.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/DatabaseFileErrorException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/AnimalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AnimalFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Humster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Hamster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/RegistryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/RegistryModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Repositories/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Repositories/FileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Repositories/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presenter/AnimalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/AnimalType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presenter/AnimalTypeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/AnimalTypeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presenter/BirthdayParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/BirthdayParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Presenter/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Presenter/RegistryPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/RegistryPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/RegistryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/RegistryView.java" afterDir="false" />
@@ -123,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703620345980</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Частично проработана обработка исключительных ситуаций">
+      <created>1703624522829</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703624522829</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +130,7 @@
     <MESSAGE value="Начал прорабатывать реализацию View и Presenter" />
     <MESSAGE value="Добавлено считывание исходных данных из файла" />
     <MESSAGE value="Рефакторинг. Создан класс-репозиторий для хранения данных в файле" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг. Создан класс-репозиторий для хранения данных в файле" />
+    <MESSAGE value="Частично проработана обработка исключительных ситуаций" />
+    <option name="LAST_COMMIT_MESSAGE" value="Частично проработана обработка исключительных ситуаций" />
   </component>
 </project>

@@ -1,9 +1,6 @@
 package Presenter;
 
-import Exceptions.AnimalTypeParseException;
-import Exceptions.BirthdayParseException;
-import Exceptions.DatabaseException;
-import Exceptions.EmptyNameException;
+import Exceptions.*;
 import Model.Entities.Animal;
 import Model.Model;
 import View.View;
@@ -50,17 +47,45 @@ public class RegistryPresenter implements Presenter {
                             throw new EmptyNameException("Введено пустое имя","");
                         }
                         Date bithday = BirthdayParser.parse(view.get(Messages.GET_BIRTHDAY));
-                        List<String> commands = Arrays.asList(view.get(Messages.GET_COMMANDS).split("\\,"));
+                        List<String> commands = Arrays.asList(view.get(Messages.GET_COMMAND_LIST).split("\\,"));
                         Animal animal = AnimalFactory.get(type, name, bithday, commands);
-                        System.out.println(animal);
                         model.add(animal);
+                        view.show(List.of(model.toString()), Messages.ANIMAL_ADDED);
                     } catch (DatabaseException | BirthdayParseException | EmptyNameException | AnimalTypeParseException e) {
                         view.show(null, e.getMessage() + " " + e.getText());
                     }
                     break;
                 case "3":
+                    try {
+                        String name = view.get(Messages.GET_NAME);
+                        Animal animal = model.getByName(name);
+                        if (animal == null) {
+                            view.show(null, Messages.ANIMAL_NOT_FINDED);
+                        } else {
+                            view.show(List.of(animal.toString()), Messages.ANIMAL_FINDED);
+                        }
+                    } catch (DatabaseException | BirthdayParseException e) {
+                        view.show(null, e.getMessage() + " " + e.getText());
+                    };
+
                     break;
                 case "4":
+                    try {
+                        String name = view.get(Messages.GET_NAME);
+                        Animal animal = model.getByName(name);
+                        List<String> commands = Arrays.asList(view.get(Messages.GET_COMMAND).split("\\,"));
+                        if (commands.size() > 1) {
+                            throw new CommandsSizeException("Указывайте команды по одной", "");
+                        }
+                        if (commands.isEmpty() || commands.get(0).isBlank()) {
+                            throw new CommandsSizeException("Ввод пустых команд не допустим", "");
+                        }
+                        model.addCommand(commands.get(0), animal);
+                    } catch (DatabaseException | BirthdayParseException | CommandsSizeException e) {
+                        view.show(null, e.getMessage() + " " + e.getText());
+                    }
+                    break;
+                case "5":
                     return;
             }
         }

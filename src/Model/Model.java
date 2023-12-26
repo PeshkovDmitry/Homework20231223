@@ -14,6 +14,6 @@ public interface Model {
 
     public Animal getByName(String name) throws DatabaseException, BirthdayParseException;
 
-    public void addCommand(String command, Animal animal);
+    public void addCommand(String command, Animal animal) throws BirthdayParseException, DatabaseException;
 
 }
