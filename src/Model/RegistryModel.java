@@ -23,24 +23,7 @@ public class RegistryModel implements Model {
 
     @Override
     public List<Animal> getAll() {
-        List<Animal> list = new ArrayList<>();
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("Animals.csv"));
-            String str = "";
-            while ((str = bufferedReader.readLine()) != null) {
-                String[] data = str.split(";");
-                list.add(AnimalFactory.get(
-                        AnimalType.valueOf(data[1]),
-                        data[0],
-                        BirthdayParser.parse(data[2]),
-                        Arrays.asList(data[3].split(","))
-                ));
-            }
-        }
-        catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-        return list;
+
     }
 
     @Override

@@ -1,5 +1,7 @@
 package Model.Entities;
 
+import Presenter.BirthdayParser;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -41,6 +43,13 @@ public abstract class Animal {
 
     public void setCommands(List<String> commands) {
         this.commands = commands;
+    }
+
+    public String getCSV() {
+        return getName() + ";"
+                + this.getClass().getName().toLowerCase() + ";"
+                + new SimpleDateFormat("yyyy-MM-dd").format(birthday) + ";"
+                + getCommands() + ";";
     }
 
     @Override
