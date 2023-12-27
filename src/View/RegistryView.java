@@ -32,4 +32,9 @@ public class RegistryView implements View {
         System.out.print(message);
         return scanner.nextLine().trim();
     }
+
+    @Override
+    public void close() {
+        scanner.close();
+    }
 }

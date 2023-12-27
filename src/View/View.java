@@ -10,4 +10,6 @@ public interface View {
 
     public String get(String message);
 
+    public void close();
+
 }

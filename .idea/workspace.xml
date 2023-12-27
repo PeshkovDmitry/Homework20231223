@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37531909-7e18-4edf-bbc7-b4d679c843c9" name="Changes" comment="Частично проработана обработка исключительных ситуаций">
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/CommandsSizeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animals (copy).csv" beforeDir="false" afterPath="$PROJECT_DIR$/Animals (copy).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals (copy).csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Animals.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Animals.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/EmptyNameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/AnimalNameException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/AnimalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AnimalFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Humster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Hamster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/RegistryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/RegistryModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entities/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entities/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Repositories/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Repositories/FileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presenter/AnimalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/AnimalType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presenter/AnimalTypeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Parsers/AnimalTypeParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presenter/BirthdayParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Parsers/BirthdayParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Presenter/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Presenter/RegistryPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presenter/RegistryPresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/RegistryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/RegistryView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +48,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Дима/Homework20231223"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Дима/Homework20231223&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Дима\Homework20231223" />

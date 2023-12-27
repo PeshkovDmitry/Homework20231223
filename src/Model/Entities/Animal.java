@@ -1,7 +1,5 @@
 package Model.Entities;
 
-import Presenter.BirthdayParser;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;

@@ -4,8 +4,8 @@ import Exceptions.BirthdayParseException;
 import Exceptions.DatabaseException;
 import Model.AnimalFactory;
 import Model.Entities.Animal;
-import Presenter.AnimalType;
-import Presenter.BirthdayParser;
+import Model.AnimalType;
+import Model.Parsers.BirthdayParser;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,6 +1,7 @@
-package Presenter;
+package Model.Parsers;
 
 import Exceptions.AnimalTypeParseException;
+import Model.AnimalType;
 
 public class AnimalTypeParser {
 

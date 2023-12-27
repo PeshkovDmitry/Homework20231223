@@ -1,7 +1,6 @@
 package Model;
 
 import Model.Entities.*;
-import Presenter.AnimalType;
 
 import java.util.Date;
 import java.util.List;
